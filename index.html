@@ -1,42 +1,335 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cong Fu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cong Fu | Independent Researcher</title>
+  <meta
+    name="description"
+    content="Cong Fu's personal academic homepage. Research interests include recommender systems, machine learning, LLMs, RAG, vector search, and large-scale AI systems."
+  />
+  <style>
+    :root {
+      --text: #1f2933;
+      --muted: #5f6c7b;
+      --link: #175cd3;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --soft-bg: #f8fafc;
+      --accent-bg: #eef4ff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0 0 8px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .tagline {
+      font-size: 17px;
+      max-width: 760px;
+      margin: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--link);
+      background: var(--accent-bg);
+      border: 1px solid #d6e4ff;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    section {
+      margin: 34px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 22px 0 8px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .card {
+      background: var(--soft-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .project {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        padding: 36px 18px 56px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Cong Fu</h1>
+  <main class="container">
+    <header>
+      <h1>Cong Fu</h1>
+      <p class="subtitle">Independent Researcher · Singapore</p>
+      <p class="tagline">
+        I work on scalable and practical AI systems, with research interests in recommender systems,
+        machine learning, large language models, retrieval-augmented generation, search engines,
+        vector search, and large-scale AI infrastructure.
+      </p>
 
-  <p><strong>Independent Researcher</strong></p>
-  <p>Singapore</p>
+      <div class="links">
+        <a href="https://github.com/CongFu92">GitHub</a>
+        <a href="https://orcid.org/0000-0002-3624-6665">ORCID</a>
+        <a href="https://scholar.google.com/citations?hl=en&oi=ao&user=Gvp9ErEAAAAJ">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/cong-fu-23b45884?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+        <a href="https://www.zhihu.com/people/FU-CONG-BEN">Zhihu</a>
+        <a href="https://x.com/CongFuNSG">X</a>
+      </div>
+    </header>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Machine Learning</li>
-    <li>Recommender Systems</li>
-    <li>Generative Recommendation</li>
-    <li>Information Retrieval and Vector Search</li>
-    <li>Efficient LLM Systems</li>
-  </ul>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a researcher and engineering leader working at the intersection of machine learning
+        research and real-world AI products. My work focuses on building efficient, scalable, and
+        production-ready AI systems for recommendation, retrieval, ranking, search, and intelligent agents.
+      </p>
+      <p>
+        I currently serve as a Senior Research Scientist and Team Manager at Shopee Singapore, where I lead
+        machine learning engineering work for large-scale e-commerce recommendation and merchandise ranking.
+      </p>
+      <p>
+        I also conduct independent academic research and collaborations outside my employment, subject to
+        applicable conflict-of-interest, intellectual-property, and publication policies.
+      </p>
+    </section>
 
-  <h2>Current Position</h2>
-  <p>Senior Research Scientist / Senior Expert Engineer, Shopee, Singapore.</p>
+    <section>
+      <h2>Research Interests</h2>
 
-  <h2>Independent Research</h2>
-  <p>
-    I conduct independent academic research and collaborations outside my employment,
-    subject to applicable conflict-of-interest and intellectual property policies.
-  </p>
+      <div class="card">
+        <h3>Recommender Systems and Generative Recommendation</h3>
+        <p>
+          I am interested in large-scale recommender systems, transformer-style recommendation models,
+          semantic ID tokenization, user behavior modeling, multi-task learning, ranking optimization,
+          and the integration of foundation models into personalized search and recommendation.
+        </p>
+      </div>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://github.com/CongFu92">GitHub</a></li>
-    <li>OpenReview: to be added</li>
-    <li>Google Scholar: to be added</li>
-    <li>Semantic Scholar: to be added</li>
-    <li>DBLP: to be added</li>
-    <li>ORCID: to be added</li>
-  </ul>
+      <div class="card">
+        <h3>LLMs, RAG, and Agent Systems</h3>
+        <p>
+          I study efficient pre-training and post-training, retrieval-augmented generation,
+          tool-use optimization, agent-style modeling, and scalable systems that combine foundation models
+          with search, recommendation, and external tools.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Vector Search and Information Retrieval</h3>
+        <p>
+          I have long-standing interests in approximate nearest neighbor search, maximum inner product search,
+          graph-based vector indexes, large-scale vector databases, and retrieval systems for both classical
+          machine learning and modern AI applications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Efficient and Practical AI Systems</h3>
+        <p>
+          I care about methods that can survive real-world constraints: scalability, latency, continual
+          adaptation, model compression, distillation, training efficiency, and robust deployment in
+          industrial-scale environments.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research Collaboration</h2>
+      <p>
+        I am open to academic collaborations on topics related to efficient LLM training, recommender systems,
+        large transformer-style recommender models, AI agents, retrieval systems, and vector search.
+      </p>
+      <p>
+        Current topics of interest include scaling laws for recommendation models, agent-style modeling for
+        recommender systems, semantic ID learning for generative recommendation, RAG evaluation, and the
+        integration of foundation models into personalized product search and ranking.
+      </p>
+    </section>
+
+    <section>
+      <h2>Background</h2>
+      <p>
+        I received my Ph.D. and Bachelor's degrees from Zhejiang University. My academic training spans
+        machine learning, information retrieval, data mining, and scalable AI systems.
+      </p>
+      <p>
+        Before Shopee, I worked on large-scale AI systems and recommendation technologies at Alibaba Group.
+        I have also conducted research on machine learning and knowledge representation as a visiting scholar
+        at the University of Southern California.
+      </p>
+    </section>
+
+    <section>
+      <h2>Selected Open-Source Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3><a href="https://github.com/ZJULearning/nsg">NSG</a></h3>
+          <p>Navigating Spreading-out Graph for approximate nearest neighbor search.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/ZJULearning/efanna">EFANNA</a></h3>
+          <p>A fast library for approximate nearest neighbor search and KNN graph construction.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/ZJULearning/SSG">SSG</a></h3>
+          <p>Satellite System Graphs for scalable graph-based similarity search.</p>
+        </div>
+
+        <div class="project">
+          <h3><a href="https://github.com/FuCongResearchSquad/ResFlow">ResFlow</a></h3>
+          <p>A low-cost joint learning framework for multi-behavior recommendation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications and Academic Profiles</h2>
+      <p>
+        Please refer to my academic profiles for a more complete publication list.
+      </p>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?hl=en&oi=ao&user=Gvp9ErEAAAAJ">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0002-3624-6665">ORCID</a></li>
+        <li><a href="https://github.com/CongFu92">GitHub</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Book</h2>
+      <p>
+        <strong>Business Driven Recommender Systems: Methodology and Practice</strong><br />
+        《业务驱动的推荐系统：方法与实践》
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email: fc731097343 [at] gmail.com
+      </p>
+      <p class="note">
+        I may be slow to respond, but I welcome serious research discussions and collaboration proposals.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        This is my personal academic homepage. Views expressed here are my own and do not necessarily
+        represent the views of my employer.
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
-
